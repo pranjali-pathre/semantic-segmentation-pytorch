@@ -180,7 +180,7 @@ if __name__ == '__main__':
         cfg.DIR, 'encoder_' + cfg.TEST.checkpoint)
     cfg.MODEL.weights_decoder = os.path.join(
         cfg.DIR, 'decoder_' + cfg.TEST.checkpoint)
-
+    print(cfg.MODEL.weights_encoder)
     assert os.path.exists(cfg.MODEL.weights_encoder) and \
         os.path.exists(cfg.MODEL.weights_decoder), "checkpoint does not exitst!"
 
